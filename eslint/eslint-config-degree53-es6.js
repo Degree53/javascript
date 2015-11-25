@@ -1,0 +1,40 @@
+module.exports = {
+
+    "parser": "babel-eslint",
+
+    "ecmaFeatures": {
+        "arrowFunctions": true,
+        "blockBindings": true,
+        "classes": true,
+        "defaultParams": true,
+        "destructuring": true,
+        "modules": true,
+        "objectLiteralDuplicateProperties": false,
+        "restParams": true,
+        "spread": true,
+        "templateStrings": true,
+        "globalReturn": false
+    },
+
+    "rules": {
+        "arrow-body-style": [0, "as-needed"],
+        "arrow-parens": 0,
+        "arrow-spacing": 0,
+        "constructor-super": 0,
+        "generator-star-spacing": 0,
+        "no-arrow-condition": 0,
+        "no-class-assign": 0,
+        "no-const-assign": 0,
+        "no-dupe-class-members": 0,
+        "no-this-before-super": 0,
+        "no-var": 0,
+        "object-shorthand": 0,
+        "prefer-arrow-callback": 0,
+        "prefer-const": 0,
+        "prefer-reflect": 0,
+        "prefer-spread": 0,
+        "prefer-template": 0,
+        "require-yield": 0
+    }
+
+};
