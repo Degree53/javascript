@@ -1,69 +1,91 @@
 module.exports = {
 
     "rules": {
-        "array-bracket-spacing": [0, "never"],
+        "array-bracket-spacing": 0,
         "block-spacing": 0,
-        "brace-style": [0, "1tbs"],
-        "camelcase": 0,
-        "comma-spacing": 0,
-        "comma-style": 0,
-        "computed-property-spacing": [0, "never"],
-        "consistent-this": [0, "that"],
-        "eol-last": 0,
-        "func-names": 0,
-        "func-style": [0, "declaration"],
-        "id-length": 0,
-        "id-match": 0,
-        "indent": 0,
-        "jsx-quotes": [0, "prefer-double"],
-        "key-spacing": [0, { "beforeColon": false, "afterColon": true }],
-        "linebreak-style": [0, "unix"],
-        "lines-around-comment": 0,
-        "max-depth": [0, 4],
-        "max-len": [0, 80, 4],
-        "max-nested-callbacks": [0, 2],
-        "max-params": [0, 3],
-        "max-statements": [0, 10],
-        "new-cap": 0,
-        "new-parens": 0,
-        "newline-after-var": 0,
+        "brace-style": [ 2, "1tbs", {
+			"allowSingleLine": false
+		}],
+        "camelcase": [ 2, "always" ],
+        "comma-spacing": [ 2, {
+			"before": false,
+			"after": true
+		}],
+        "comma-style": [ 2, "last" ],
+        "computed-property-spacing": [ 2, "never" ],
+        "consistent-this": [ 2, "self" ],
+        "eol-last": [ 2, "unix" ],
+        "func-names": 0, // review
+        "func-style": 0,
+        "id-length": 0, // review
+        "id-match": 0, // review
+        "indent": [ 2, "tab" ],
+        "jsx-quotes": [ 2, "prefer-single" ],
+        "key-spacing": [ 2, {
+			"beforeColon": false,
+			"afterColon": true,
+			"mode": "strict"
+		}],
+        "linebreak-style": [ 2, "unix" ], // review
+        "lines-around-comment": [ 2, { // review
+			"beforeBlockComment": true,
+			"afterBlockComment": false,
+			"beforeLineComment": true,
+			"afterLineComment": false,
+			"allowBlockStart": true,
+			"allowBlockEnd": false,
+			"allowObjectStart": true,
+			"allowObjectEnd": false
+		}],
+        "max-depth": 0, // review
+        "max-len": 0, // review
+        "max-nested-callbacks": [ 2, 0 ], // review
+        "max-params": [ 2, 4 ], // review
+        "max-statements": [ 2, 10 ], // review
+        "new-cap": 2,
+        "new-parens": 2,
+        "newline-after-var": 2, // review
         "no-array-constructor": 0,
-        "no-bitwise": 0,
-        "no-continue": 0,
+        "no-bitwise": 0, // review
+        "no-continue": 0, // review
         "no-inline-comments": 0,
-        "no-lonely-if": 0,
-        "no-mixed-spaces-and-tabs": [0, false],
-        "no-multiple-empty-lines": [0, {"max": 2}],
-        "no-negated-condition": 0,
-        "no-nested-ternary": 0,
-        "no-new-object": 0,
+        "no-lonely-if": 2,
+        "no-mixed-spaces-and-tabs": [ 2, false ],
+        "no-multiple-empty-lines": [ 2, { // review
+			"max": 1
+		}],
+        "no-negated-condition": 2,
+        "no-nested-ternary": 2,
+        "no-new-object": 2,
         "no-plusplus": 0,
         "no-restricted-syntax": 0,
-        "no-spaced-func": 0,
+        "no-spaced-func": 2,
         "no-ternary": 0,
-        "no-trailing-spaces": 0,
+        "no-trailing-spaces": 2,
         "no-underscore-dangle": 0,
-        "no-unneeded-ternary": 0,
-        "object-curly-spacing": [0, "never"],
-        "one-var": [0, "always"],
-        "operator-assignment": [0, "always"],
-        "operator-linebreak": 0,
+        "no-unneeded-ternary": 2,
+        "object-curly-spacing": 0,
+        "one-var": 0,
+        "operator-assignment": 0,
+        "operator-linebreak": [ 2, "after" ],
         "padded-blocks": 0,
-        "quote-props": 0,
-        "quotes": [0, "double"],
+        "quote-props": [ 2, "as-needed", { "keywords": true } ],
+        "quotes": 0, // review
         "require-jsdoc": 0,
-        "semi-spacing": [0, {"before": false, "after": true}],
-        "semi": 0,
+        "semi-spacing": [ 2, { "before": false, "after": true } ],
+        "semi": [ 2 , "always" ],
         "sort-vars": 0,
-        "space-after-keywords": [0, "always"],
-        "space-before-blocks": [0, "always"],
-        "space-before-function-paren": [0, "always"],
-        "space-before-keywords": [0, "always"],
-        "space-in-parens": [0, "never"],
-        "space-infix-ops": 0,
-        "space-return-throw-case": 0,
-        "space-unary-ops": [0, { "words": true, "nonwords": false }],
-        "spaced-comment": 0,
+        "space-after-keywords": [ 2, "always" ],
+        "space-before-blocks": [ 2, "always" ],
+        "space-before-function-paren": [ 2, "never" ],
+        "space-before-keywords": [ 2, "always" ],
+        "space-in-parens": [ 2, "never" ],
+        "space-infix-ops": [ 2, {
+			"int32Hint": false
+		}],
+        "space-return-throw-case": 2,
+        "space-unary-ops": [ 2, { "words": true, "nonwords": false } ],
+        "spaced-comment": [ 2, "always" ],
         "wrap-regex": 0
     }
 

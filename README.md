@@ -71,6 +71,7 @@
 
 **[⬆ back to top](#table-of-contents)**
 
+
 ## Objects
 
   - Use the literal syntax for object creation.
@@ -119,6 +120,7 @@
     ```
 
 **[⬆ back to top](#table-of-contents)**
+
 
 ## Arrays
 
@@ -313,7 +315,6 @@
     ```
 
 **[⬆ back to top](#table-of-contents)**
-
 
 
 ## Properties
@@ -550,7 +551,6 @@
   - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) by [Ben Cherry](http://www.adequatelygood.com/)
 
 **[⬆ back to top](#table-of-contents)**
-
 
 
 ## Conditional Expressions & Equality
@@ -829,6 +829,7 @@
     ```
 
 **[⬆ back to top](#table-of-contents)**
+
 
 ## Commas
 
@@ -1266,7 +1267,7 @@
     });
     ```
 
-  **[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
 
 
 ## Modules
@@ -1453,6 +1454,7 @@
   - [nettuts](http://net.tutsplus.com/?s=javascript)
 
 **[⬆ back to top](#table-of-contents)**
+
 
 ## The JavaScript Style Guide Guide
 
