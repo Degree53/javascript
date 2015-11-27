@@ -26,34 +26,23 @@ module.exports = {
 			"afterColon": true,
 			"mode": "strict"
 		}],
-        "linebreak-style": [ 2, "unix" ], // review
-        "lines-around-comment": [ 2, { // review
-			"beforeBlockComment": true,
-			"afterBlockComment": false,
-			"beforeLineComment": true,
-			"afterLineComment": false,
-			"allowBlockStart": true,
-			"allowBlockEnd": false,
-			"allowObjectStart": true,
-			"allowObjectEnd": false
-		}],
+        "linebreak-style": 0, // review
+        "lines-around-comment": 0, // review
         "max-depth": 0, // review
         "max-len": 0, // review
-        "max-nested-callbacks": [ 2, 0 ], // review
-        "max-params": [ 2, 4 ], // review
-        "max-statements": [ 2, 10 ], // review
+        "max-nested-callbacks": 0, // review
+        "max-params": 0, // review
+        "max-statements": 0, // review
         "new-cap": 2,
         "new-parens": 2,
-        "newline-after-var": 2, // review
+        "newline-after-var": 0, // review
         "no-array-constructor": 0,
         "no-bitwise": 0, // review
         "no-continue": 0, // review
         "no-inline-comments": 0,
         "no-lonely-if": 2,
         "no-mixed-spaces-and-tabs": [ 2, false ],
-        "no-multiple-empty-lines": [ 2, { // review
-			"max": 1
-		}],
+        "no-multiple-empty-lines": 0, // review
         "no-negated-condition": 2,
         "no-nested-ternary": 2,
         "no-new-object": 2,
@@ -69,10 +58,15 @@ module.exports = {
         "operator-assignment": 0,
         "operator-linebreak": [ 2, "after" ],
         "padded-blocks": 0,
-        "quote-props": [ 2, "as-needed", { "keywords": true } ],
+        "quote-props": [ 2, "as-needed", {
+			"keywords": true
+		}],
         "quotes": 0, // review
         "require-jsdoc": 0,
-        "semi-spacing": [ 2, { "before": false, "after": true } ],
+        "semi-spacing": [ 2, {
+			"before": false,
+			"after": true
+		}],
         "semi": [ 2 , "always" ],
         "sort-vars": 0,
         "space-after-keywords": [ 2, "always" ],
@@ -84,9 +78,12 @@ module.exports = {
 			"int32Hint": false
 		}],
         "space-return-throw-case": 2,
-        "space-unary-ops": [ 2, { "words": true, "nonwords": false } ],
+        "space-unary-ops": [ 2, {
+			"words": true,
+			"nonwords": false
+		}],
         "spaced-comment": [ 2, "always" ],
-        "wrap-regex": 0
+        "wrap-regex": 0 // review
     }
 
 };

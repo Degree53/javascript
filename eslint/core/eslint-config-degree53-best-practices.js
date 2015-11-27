@@ -1,63 +1,82 @@
 module.exports = {
 
     "rules": {
-        "accessor-pairs": 0,
-        "block-scoped-var": 0,
-        "complexity": [0, 11],
-        "consistent-return": 0,
-        "curly": [0, "all"],
-        "default-case": 0,
-        "dot-location": 0,
-        "dot-notation": [0, { "allowKeywords": true }],
-        "eqeqeq": 0,
-        "guard-for-in": 0,
-        "no-alert": 0,
-        "no-caller": 0,
-        "no-case-declarations": 0,
+        "accessor-pairs": 0, // review
+        "block-scoped-var": 0, // review
+        "complexity": 0, // review
+        "consistent-return": 2,
+        "curly": [ 2, "all" ],
+        "default-case": 2,
+        "dot-location": [ 2, "property" ],
+        "dot-notation": [ 2, {
+			"allowKeywords": true,
+			"allowPattern": ""
+		}],
+        "eqeqeq": [ 2, "smart" ],
+        "guard-for-in": 2,
+        "no-alert": 2,
+        "no-caller": 2,
+        "no-case-declarations": 0, // review
         "no-div-regex": 0,
-        "no-else-return": 0,
-        "no-empty-label": 0,
-        "no-empty-pattern": 0,
-        "no-eq-null": 0,
-        "no-eval": 0,
-        "no-extend-native": 0,
-        "no-extra-bind": 0,
-        "no-fallthrough": 0,
-        "no-floating-decimal": 0,
-        "no-implicit-coercion": 0,
-        "no-implied-eval": 0,
-        "no-invalid-this": 0,
-        "no-iterator": 0,
-        "no-labels": 0,
-        "no-lone-blocks": 0,
-        "no-loop-func": 0,
-        "no-magic-numbers": 0,
-        "no-multi-spaces": 0,
-        "no-multi-str": 0,
-        "no-native-reassign": 0,
-        "no-new-func": 0,
-        "no-new-wrappers": 0,
-        "no-new": 0,
-        "no-octal-escape": 0,
-        "no-octal": 0,
-        "no-param-reassign": 0,
-        "no-process-env": 0,
-        "no-proto": 0,
-        "no-redeclare": 0,
-        "no-return-assign": 0,
-        "no-script-url": 0,
-        "no-self-compare": 0,
-        "no-sequences": 0,
-        "no-throw-literal": 0,
-        "no-unused-expressions": 0,
-        "no-useless-call": 0,
-        "no-useless-concat": 0,
-        "no-void": 0,
-        "no-warning-comments": [0, { "terms": ["todo", "fixme", "xxx"], "location": "start" }],
-        "no-with": 0,
+        "no-else-return": 2,
+        "no-empty-label": 2,
+        "no-empty-pattern": 2,
+        "no-eq-null": 0, // review
+        "no-eval": 2,
+        "no-extend-native": 0, // review
+        "no-extra-bind": 2,
+        "no-fallthrough": 2,
+        "no-floating-decimal": 2,
+        "no-implicit-coercion": 0, // review
+        "no-implied-eval": 2,
+        "no-invalid-this": 2,
+        "no-iterator": 2,
+        "no-labels": 2,
+        "no-lone-blocks": 2,
+        "no-loop-func": 2,
+        "no-magic-numbers": [ 2, {
+			"ignore": [],
+			"enforceConst": false,
+			"detectObjects": false
+		}],
+        "no-multi-spaces": 2,
+        "no-multi-str": 2,
+        "no-native-reassign": [ 2, {
+			"exceptions": []
+		}],
+        "no-new-func": 2,
+        "no-new-wrappers": 2,
+        "no-new": 2,
+        "no-octal-escape": 2,
+        "no-octal": 2,
+        "no-param-reassign": [ 2, {
+			"props": true
+		}],
+        "no-process-env": 2,
+        "no-proto": 2,
+        "no-redeclare": [ 2, {
+			"builtinGlobals": true
+		}],
+        "no-return-assign": 0, // review
+        "no-script-url": 2,
+        "no-self-compare": 2,
+        "no-sequences": 2,
+        "no-throw-literal": 2,
+        "no-unused-expressions": [ 2, {
+			"allowShortCircuit": false,
+			"allowTernary": false
+		}],
+        "no-useless-call": 2,
+        "no-useless-concat": 2,
+        "no-void": 0, // review
+        "no-warning-comments": [ 2, {
+			"terms": [ "todo", "fixme", "xxx" ],
+			"location": "start"
+		}],
+        "no-with": 2,
         "radix": 0,
-        "vars-on-top": 0,
-        "wrap-iife": 0,
-        "yoda": [0, "never"]
+        "vars-on-top": 0, // review
+        "wrap-iife": 0, // review
+        "yoda": [ 2, "never" ]
     }
 };
