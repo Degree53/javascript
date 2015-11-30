@@ -8,8 +8,8 @@ module.exports = {
 		}],
         "camelcase": [ 2, "always" ],
         "comma-spacing": [ 2, {
-			"before": false,
-			"after": true
+			"after": true,
+			"before": false
 		}],
         "comma-style": [ 2, "last" ],
         "computed-property-spacing": [ 2, "never" ],
@@ -22,8 +22,8 @@ module.exports = {
         "indent": [ 2, "tab" ],
         "jsx-quotes": [ 2, "prefer-single" ],
         "key-spacing": [ 2, {
-			"beforeColon": false,
 			"afterColon": true,
+			"beforeColon": false,
 			"mode": "strict"
 		}],
         "linebreak-style": 0, // review
@@ -64,8 +64,8 @@ module.exports = {
         "quotes": 0, // review
         "require-jsdoc": 0,
         "semi-spacing": [ 2, {
-			"before": false,
-			"after": true
+			"after": true,
+			"before": false
 		}],
         "semi": [ 2 , "always" ],
         "sort-vars": 0,
@@ -79,8 +79,8 @@ module.exports = {
 		}],
         "space-return-throw-case": 2,
         "space-unary-ops": [ 2, {
-			"words": true,
-			"nonwords": false
+			"nonwords": false,
+			"words": true
 		}],
         "spaced-comment": [ 2, "always" ],
         "wrap-regex": 0 // review

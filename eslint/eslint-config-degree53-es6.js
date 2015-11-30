@@ -17,24 +17,30 @@ module.exports = {
     },
 
     "rules": {
-        "arrow-body-style": [0, "as-needed"],
-        "arrow-parens": 0,
-        "arrow-spacing": 0,
-        "constructor-super": 0,
-        "generator-star-spacing": 0,
-        "no-arrow-condition": 0,
-        "no-class-assign": 0,
-        "no-const-assign": 0,
-        "no-dupe-class-members": 0,
-        "no-this-before-super": 0,
-        "no-var": 0,
-        "object-shorthand": 0,
-        "prefer-arrow-callback": 0,
-        "prefer-const": 0,
-        "prefer-reflect": 0,
-        "prefer-spread": 0,
-        "prefer-template": 0,
-        "require-yield": 0
+        "arrow-body-style": [ 2, "as-needed" ],
+        "arrow-parens": [ 2, "as-needed" ],
+        "arrow-spacing": [ 2, {
+			"after": true,
+			"before": true
+		}],
+        "constructor-super": 2,
+        "generator-star-spacing": [ 2, {
+			"after": true,
+			"before": true
+		}],
+        "no-arrow-condition": 2,
+        "no-class-assign": 2,
+        "no-const-assign": 2,
+        "no-dupe-class-members": 2,
+        "no-this-before-super": 2,
+        "no-var": 2,
+        "object-shorthand": [ 2, "always" ],
+        "prefer-arrow-callback": 2,
+        "prefer-const": 2,
+        "prefer-reflect": 0, // Requires polyfill
+        "prefer-spread": 2,
+        "prefer-template": 2,
+        "require-yield": 2
     }
 
 };

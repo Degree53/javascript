@@ -13,8 +13,8 @@ module.exports = {
 		}],
         "no-undefined": 2,
         "no-unused-vars": [ 2, {
-			"vars": "all",
-			"args": "after-used"
+			"args": "after-used",
+			"vars": "all"
 		}],
         "no-use-before-define": 2
     }

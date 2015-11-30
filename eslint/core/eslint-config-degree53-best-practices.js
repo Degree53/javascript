@@ -35,9 +35,9 @@ module.exports = {
         "no-lone-blocks": 2,
         "no-loop-func": 2,
         "no-magic-numbers": [ 2, {
-			"ignore": [],
+			"detectObjects": false,
 			"enforceConst": false,
-			"detectObjects": false
+			"ignore": []
 		}],
         "no-multi-spaces": 2,
         "no-multi-str": 2,
@@ -70,8 +70,8 @@ module.exports = {
         "no-useless-concat": 2,
         "no-void": 0, // review
         "no-warning-comments": [ 2, {
-			"terms": [ "todo", "fixme", "xxx" ],
-			"location": "start"
+			"location": "start",
+			"terms": [ "todo", "fixme", "xxx" ]
 		}],
         "no-with": 2,
         "radix": 0,
