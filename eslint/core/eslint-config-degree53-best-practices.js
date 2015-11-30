@@ -1,9 +1,12 @@
 module.exports = {
 
     "rules": {
-        "accessor-pairs": 0, // review
-        "block-scoped-var": 0, // review
-        "complexity": 0, // review
+        "accessor-pairs": [ 2, {
+        	"getWithoutSet": false,
+        	"setWithoutGet": true
+        }],
+        "block-scoped-var": 2,
+        "complexity": [ 2, 3 ],
         "consistent-return": 2,
         "curly": [ 2, "all" ],
         "default-case": 2,
@@ -16,18 +19,24 @@ module.exports = {
         "guard-for-in": 2,
         "no-alert": 2,
         "no-caller": 2,
-        "no-case-declarations": 0, // review
+        "no-case-declarations": 2,
         "no-div-regex": 0,
         "no-else-return": 2,
         "no-empty-label": 2,
         "no-empty-pattern": 2,
-        "no-eq-null": 0, // review
+        "no-eq-null": 2,
         "no-eval": 2,
-        "no-extend-native": 0, // review
+        "no-extend-native": [ 2, {
+        	"exceptions": []
+        }],
         "no-extra-bind": 2,
         "no-fallthrough": 2,
         "no-floating-decimal": 2,
-        "no-implicit-coercion": 0, // review
+        "no-implicit-coercion": [ 2, {
+        	"boolean": true,
+        	"number": true,
+        	"string": true
+        }],
         "no-implied-eval": 2,
         "no-invalid-this": 2,
         "no-iterator": 2,
@@ -57,7 +66,7 @@ module.exports = {
         "no-redeclare": [ 2, {
 			"builtinGlobals": true
 		}],
-        "no-return-assign": 0, // review
+        "no-return-assign": [ 2, "always" ],
         "no-script-url": 2,
         "no-self-compare": 2,
         "no-sequences": 2,
@@ -68,15 +77,15 @@ module.exports = {
 		}],
         "no-useless-call": 2,
         "no-useless-concat": 2,
-        "no-void": 0, // review
+        "no-void": 2,
         "no-warning-comments": [ 2, {
 			"location": "start",
 			"terms": [ "todo", "fixme", "xxx" ]
 		}],
         "no-with": 2,
         "radix": 0,
-        "vars-on-top": 0, // review
-        "wrap-iife": 0, // review
+        "vars-on-top": 0,
+        "wrap-iife": [2, "inside"],
         "yoda": [ 2, "never" ]
     }
 };
